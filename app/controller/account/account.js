@@ -26,9 +26,11 @@ class AccountController extends Controller {
                 name: out[0].name,
                 id: out[0].id,
             }, app.config.jwt.secret);
+            const menus =  await ctx.service.menus.menus.list();
             let res = new resdata(0, "验证成功", {
                 user: out[0],
-                token
+                token,
+                menus
             });
             ctx.body = res;
         } else {
