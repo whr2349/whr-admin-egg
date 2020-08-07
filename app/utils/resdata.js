@@ -2,8 +2,8 @@
  * @Author: whr2349
  * @Date: 2020-08-05 16:29:36
  * @LastEditors: whr2349
- * @LastEditTime: 2020-08-07 11:00:27
- * @Description: file content
+ * @LastEditTime: 2020-08-07 11:17:31
+ * @Description: 返回对象
  * @FilePath: \whr-admin-egg\app\utils\resdata.js
  */
 class EesData {

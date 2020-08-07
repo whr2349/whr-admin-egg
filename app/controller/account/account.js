@@ -1,3 +1,11 @@
+/*
+ * @Author: whr2349
+ * @Date: 2020-08-05 16:29:36
+ * @LastEditors: whr2349
+ * @LastEditTime: 2020-08-07 13:10:21
+ * @Description: 登录验证
+ * @FilePath: \whr-admin-egg\app\controller\account\account.js
+ */
 'use strict';
 const sequelize = require('sequelize');
 const Controller = require('egg').Controller;
@@ -26,11 +34,13 @@ class AccountController extends Controller {
                 name: out[0].name,
                 id: out[0].id,
             }, app.config.jwt.secret);
-            const menus =  await ctx.service.menus.menus.list();
+            const menus = await ctx.service.menus.menus.list();
+            const route = await ctx.service.menus.menus.getRoute();
             let res = new resdata(0, "验证成功", {
                 user: out[0],
                 token,
-                menus
+                menus,
+                route
             });
             ctx.body = res;
         } else {

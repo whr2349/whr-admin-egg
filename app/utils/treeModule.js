@@ -1,13 +1,13 @@
 /*
- *@description:
- *@author: whr2349
- *@date: 2020-08-07 08:30:54
-*/
-const sequelize = require('sequelize');
-/**
- * 直接用模型生成tree结构，id是顶层节点id
+ * @Author: whr2349
+ * @Date: 2020-08-05 16:29:36
+ * @LastEditors: whr2349
+ * @LastEditTime: 2020-08-07 13:09:25
+ * @Description: ModuleTree类，直接用模型生成tree结构，id是顶层节点id
+ * @FilePath: \whr-admin-egg\app\utils\treeModule.js
  */
-class TreeModule {
+const sequelize = require('sequelize');
+class ModuleTree {
     constructor(module, id = '') {
         this.id = id;
         this.module = module;
@@ -46,4 +46,4 @@ class TreeModule {
 
 }
 
-module.exports = TreeModule;
+module.exports = ModuleTree;
