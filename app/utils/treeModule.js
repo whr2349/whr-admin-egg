@@ -1,4 +1,12 @@
+/*
+ *@description:
+ *@author: whr2349
+ *@date: 2020-08-07 08:30:54
+*/
 const sequelize = require('sequelize');
+/**
+ * 直接用模型生成tree结构，id是顶层节点id
+ */
 class TreeModule {
     constructor(module, id = '') {
         this.id = id;
@@ -13,9 +21,7 @@ class TreeModule {
     async getmoduleTree() {
         let rootmodule = await this.module.findAll({ where: this.where });
         let newmodule = await this.getChildmodule(rootmodule);
-        console.log(newmodule);
         let a = JSON.parse(JSON.stringify(newmodule));
-        console.log(a);
         return a
     }
     async getChildmodule(rootmodule) {

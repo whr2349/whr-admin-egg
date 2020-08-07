@@ -1,7 +1,7 @@
 'use strict';
 const sequelize = require('sequelize');
 const Controller = require('egg').Controller;
-const resdata = require('../../utils/resdata')
+const resdata = require('../../utils/resData')
 const Op = sequelize.Op;
 
 class AccountController extends Controller {
