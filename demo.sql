@@ -1,17 +1,17 @@
 /*
  Navicat Premium Data Transfer
 
- Source Server         : Mysql5.7
+ Source Server         : Mysql57
  Source Server Type    : MySQL
- Source Server Version : 50722
+ Source Server Version : 50717
  Source Host           : localhost:3306
  Source Schema         : demo
 
  Target Server Type    : MySQL
- Target Server Version : 50722
+ Target Server Version : 50717
  File Encoding         : 65001
 
- Date: 31/07/2020 18:15:00
+ Date: 09/08/2020 22:32:34
 */
 
 SET NAMES utf8mb4;
@@ -40,13 +40,13 @@ CREATE TABLE `menus`  (
 -- ----------------------------
 -- Records of menus
 -- ----------------------------
-INSERT INTO `menus` VALUES ('1be5777a-d203-11ea-b294-02fcdc4e7412', '信息管理', '2020-07-30 09:15:18', '2020-07-30 09:15:51', '0', 'el-icon-eleme', '/information', '0', '', '1', '');
-INSERT INTO `menus` VALUES ('1be578e2-d203-11ea-b294-02fcdc4e7412', '会员列表', '2020-07-30 09:26:13', '2020-07-30 09:26:16', '0', 'el-icon-user-solid', '/information/memberinfo', '0', 'views/information/memberinfo.vue', '2', '1be5777a-d203-11ea-b294-02fcdc4e7412');
-INSERT INTO `menus` VALUES ('1be579a0-d203-11ea-b294-02fcdc4e7412', '系统设置', '2020-07-30 09:29:13', '2020-07-30 09:29:15', '0', 'el-icon-s-tools', '/sys', '0', '', '3', NULL);
-INSERT INTO `menus` VALUES ('1be57a36-d203-11ea-b294-02fcdc4e7412', '用户列表', '2020-07-30 09:52:03', '2020-07-30 09:52:06', '0', 'el-icon-s-custom', '/sys/users', '0', 'views/sys/users.vue', '4', '1be579a0-d203-11ea-b294-02fcdc4e7412');
-INSERT INTO `menus` VALUES ('1be57ac2-d203-11ea-b294-02fcdc4e7412', '权限管理', '2020-07-30 09:54:39', '2020-07-30 09:54:48', '0', 'el-icon-s-check', '/sys/authority', '0', NULL, '5', '1be579a0-d203-11ea-b294-02fcdc4e7412');
-INSERT INTO `menus` VALUES ('1be57b4e-d203-11ea-b294-02fcdc4e7412', '菜单列表', '2020-07-30 09:55:18', '2020-07-30 09:56:32', '0', NULL, '/sys/authority/menus', '0', 'views/sys/authority/menus.vue', '6', '1be57ac2-d203-11ea-b294-02fcdc4e7412');
-INSERT INTO `menus` VALUES ('1be57bda-d203-11ea-b294-02fcdc4e7412', '角色管理', '2020-07-30 09:57:18', '2020-07-30 09:58:27', '0', NULL, '/sys/authority/roles', '0', 'views/sys/authority/roles.vue', '7', '1be57ac2-d203-11ea-b294-02fcdc4e7412');
+INSERT INTO `menus` VALUES ('1be5777a-d203-11ea-b294-02fcdc4e7412', '信息管理', '2020-07-30 09:15:18', '2020-07-30 09:15:51', '0', 'el-icon-eleme', '/index/information', '0', '', '1', '');
+INSERT INTO `menus` VALUES ('1be578e2-d203-11ea-b294-02fcdc4e7412', '会员列表', '2020-07-30 09:26:13', '2020-07-30 09:26:16', '0', 'el-icon-user-solid', '/index/information/memberinfo', '0', 'information/memberinfo', '2', '1be5777a-d203-11ea-b294-02fcdc4e7412');
+INSERT INTO `menus` VALUES ('1be579a0-d203-11ea-b294-02fcdc4e7412', '系统设置', '2020-07-30 09:29:13', '2020-07-30 09:29:15', '0', 'el-icon-s-tools', '/index/sys', '0', '', '3', NULL);
+INSERT INTO `menus` VALUES ('1be57a36-d203-11ea-b294-02fcdc4e7412', '用户列表', '2020-07-30 09:52:03', '2020-07-30 09:52:06', '0', 'el-icon-s-custom', '/index/sys/users', '0', 'sys/users', '4', '1be579a0-d203-11ea-b294-02fcdc4e7412');
+INSERT INTO `menus` VALUES ('1be57ac2-d203-11ea-b294-02fcdc4e7412', '权限管理', '2020-07-30 09:54:39', '2020-07-30 09:54:48', '0', 'el-icon-s-check', '/index/sys/authority', '0', NULL, '5', '1be579a0-d203-11ea-b294-02fcdc4e7412');
+INSERT INTO `menus` VALUES ('1be57b4e-d203-11ea-b294-02fcdc4e7412', '菜单列表', '2020-07-30 09:55:18', '2020-07-30 09:56:32', '0', NULL, '/index/sys/authority/menus', '0', 'sys/authority/menus', '6', '1be57ac2-d203-11ea-b294-02fcdc4e7412');
+INSERT INTO `menus` VALUES ('1be57bda-d203-11ea-b294-02fcdc4e7412', '角色管理', '2020-07-30 09:57:18', '2020-07-30 09:58:27', '0', NULL, '/index/sys/authority/roles', '0', 'sys/authority/roles', '7', '1be57ac2-d203-11ea-b294-02fcdc4e7412');
 
 -- ----------------------------
 -- Table structure for role_menus
